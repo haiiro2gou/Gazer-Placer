@@ -15,6 +15,12 @@
     scoreboard objectives remove Ashen.GazerPlacer.UserID
 
 #> scoreboard
+    #> const
+    # @within function
+    #   gazerplacer:attack/main
+        scoreboard objectives add Ashen.GazerPlacer.Const dummy
+        function gazerplacer:define_const
+
     #> handler
     # @within function
     #   gazerplacer:tick/player
