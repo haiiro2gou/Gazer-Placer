@@ -5,8 +5,8 @@
     execute store result score $Match Ashen.GazerPlacer.Temporary run data modify entity @s interaction.player set from entity @e[tag=this,limit=1] UUID
 
 # exec
-    execute unless score $Match Ashen.GazerPlacer.Temporary matches 0 as @a[gamemode=!adventure,gamemode=!spectator,tag=this,limit=1] run function gazerplacer:use/main
-    execute unless score $Match Ashen.GazerPlacer.Temporary matches 0 as @a[gamemode=!creative,gamemode=!survival,tag=this,limit=1] run tellraw @s [{"nbt":"Ashen.Global.Prefix.FAILED","storage":"global"},{"translate":"Ashen.GazerPlacer.Failed","fallback":"Blocks cannot be placed in this gamemode!"}]
+    execute if score $Match Ashen.GazerPlacer.Temporary matches 0 as @a[gamemode=!adventure,gamemode=!spectator,tag=this,limit=1] run function gazerplacer:use/main
+    execute if score $Match Ashen.GazerPlacer.Temporary matches 0 as @a[gamemode=!creative,gamemode=!survival,tag=this,limit=1] run tellraw @s [{"nbt":"Ashen.Global.Prefix.FAILED","storage":"global"},{"translate":"Ashen.GazerPlacer.Failed","fallback":"Blocks cannot be placed in this gamemode!"}]
 
 # reset
     scoreboard players reset $Match Ashen.GazerPlacer.Temporary
