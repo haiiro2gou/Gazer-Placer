@@ -4,4 +4,3 @@
 #> tag
 # @within function gazerplacer:**
     #declare tag Ashen.GazerPlacer.Interaction
-    

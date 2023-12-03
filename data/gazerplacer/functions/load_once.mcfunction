@@ -21,6 +21,12 @@
         scoreboard objectives add Ashen.GazerPlacer.Const dummy
         function gazerplacer:define_const
 
+    #> detector
+    # @within function
+    #   gazerplacer:detector/**
+        #declare tag/block gazerplacer:air
+        scoreboard objectives add Ashen.GazerPlacer.Detector dummy
+
     #> handler
     # @within function
     #   gazerplacer:tick/player
@@ -66,3 +72,6 @@
     #declare dimension gazerplacer:clipboard
     execute in gazerplacer:clipboard run forceload add 0 0
     execute in gazerplacer:clipboard run setblock 0 0 0 shulker_box{Lock: "lock"}
+    execute in gazerplacer:clipboard run summon marker 0 0 0 {Tags: ["Ashen.GazerPlacer.Detector.Marker", "Ashen.GazerPlacer.Detector.1"], UUID: [I; 1, 3298, 0, 1]}
+    execute in gazerplacer:clipboard run summon marker 0 0 0 {Tags: ["Ashen.GazerPlacer.Detector.Marker", "Ashen.GazerPlacer.Detector.2"], UUID: [I; 1, 3298, 0, 2]}
+    execute in gazerplacer:clipboard run summon marker 0 0 0 {Tags: ["Ashen.GazerPlacer.Detector.Marker", "Ashen.GazerPlacer.Detector.3"], UUID: [I; 1, 3298, 0, 3]}

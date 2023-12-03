@@ -27,7 +27,9 @@ Datapack to place blocks where you see
 
 ### ライセンス (License)
 
-[Apache-2.0 License](LICENSE)が適用されています。
+以下のディレクトリを除き[Apache-2.0 License](LICENSE)が適用されています。
+
+- [data/gazerplacer/functions/detector](data/gazerplacer/functions/detector)ディレクトリ ([MIT License](data/gazerplacer/functions/detector/LICENSE) / Copyright by [Rusk_Eocssar](https://github.com/RuskEocssar))
 
 ### 各種リンク (Contact)
 
