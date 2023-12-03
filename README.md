@@ -15,9 +15,15 @@ Datapack to place blocks where you see
 
 ## 使い方 (How to use)
 
-WIP
+- `/function gazerplacer:give`でGazer Placer(棒)を入手
+- 左クリックでモード切替 (設置モード / 置換モード)
+- 右クリックで使用
 
 ## その他 (Others)
+
+### 既知のバグ (Known Bugs)
+
+- Reload時にinteractionエンティティが1体残存する
 
 ### ライセンス (License)
 
