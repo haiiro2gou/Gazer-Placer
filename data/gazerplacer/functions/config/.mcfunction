@@ -3,7 +3,7 @@
 
 # Prefix
     tellraw @s [{"text": "================================", "color": "gold"}]
-    tellraw @s [{"translate": "Ashen.GazerPlacer.Version", "fallback": "\u00A7aCommand Caster %s", "with": [{"nbt": "Ashen.GazerPlacer.Version", "storage": "minecraft:global", "color": "dark_gray"}]}, {"text": " "}, {"translate": "Ashen.GazerPlacer.Config.Title", "fallback": "Config"}]
+    tellraw @s [{"translate": "Ashen.GazerPlacer.Version", "fallback": "\u00A7aGazer Placer %s", "with": [{"nbt": "Ashen.GazerPlacer.Version", "storage": "minecraft:global", "color": "dark_gray"}]}, {"text": " "}, {"translate": "Ashen.GazerPlacer.Config.Title", "fallback": "Config"}]
     tellraw @s [{"text": ""}]
 
 # List
