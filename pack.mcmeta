@@ -1,0 +1,9 @@
+{
+    "pack": {
+        "pack_format": 18,
+        "supported_formats": {
+            "min_exclusive": 18
+        },
+        "description": "To be able to place blocks where you see"
+    }
+}
