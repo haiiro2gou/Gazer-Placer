@@ -1,6 +1,5 @@
 #> gazerplacer:detector/core/4
 # @within function
-#   gazerplacer:detector/main
 #   gazerplacer:detector/core/2
 
 # flag

@@ -11,6 +11,7 @@
     tellraw @a [{"text": "================================", "color": "gold"}]
 
 #> reset
+    kill @e[tag=Ashen.GazerPlacer.Detection.Marker]
     scoreboard objectives remove Ashen.GazerPlacer.FirstJoin
     scoreboard objectives remove Ashen.GazerPlacer.UserID
 

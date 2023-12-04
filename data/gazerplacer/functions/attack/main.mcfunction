@@ -16,8 +16,12 @@
     execute if score $IsReplace Ashen.GazerPlacer.Temporary matches -1 run data modify storage gazerplacer:player Config.ReplaceMode set value false
 
 # notify
-    execute if data storage gazerplacer:player Config{Notification: 1b, ReplaceMode: 1b} run tellraw @s [{"translate": "Ashen.GazerPlacer.Result11", "fallback": "Replace mode enabled"}]
-    execute if data storage gazerplacer:player Config{Notification: 1b, ReplaceMode: 0b} run tellraw @s [{"translate": "Ashen.GazerPlacer.Result10", "fallback": "Replace mode disabled"}]
+    execute if data storage gazerplacer:player Config{NotifyResult: 1b, ReplaceMode: 1b} run tellraw @s [{"translate": "Ashen.GazerPlacer.Attack.Result11", "fallback": "Replace mode enabled"}]
+    execute if data storage gazerplacer:player Config{NotifyResult: 1b, ReplaceMode: 0b} run tellraw @s [{"translate": "Ashen.GazerPlacer.Attack.Result10", "fallback": "Replace mode disabled"}]
+
+# particle
+    playsound block.piston.extend master @s ~ ~ ~ 0.3 1.2 1
+    particle scrape ~ ~1 ~ 0.3 0.4 0.3 1 20 normal
 
 # set config
     function gazerplacer:config/set

@@ -10,7 +10,7 @@
     function gazerplacer:config/get
     data modify storage gazerplacer:player Config.Revert set value false
 
-# Notification
+# NotifyResult
     execute if score @s Ashen.GazerPlacer.Trigger matches 1 if data storage gazerplacer:player Config{NotifyResult: 0b} run data modify storage gazerplacer:player Config.Revert set value true
     execute if score @s Ashen.GazerPlacer.Trigger matches 1 if data storage gazerplacer:player Config{NotifyResult: 0b} run data modify storage gazerplacer:player Config.NotifyResult set value true
     execute if score @s Ashen.GazerPlacer.Trigger matches 1 if data storage gazerplacer:player Config{NotifyResult: 1b, Revert: 0b} run data modify storage gazerplacer:player Config.NotifyResult set value false

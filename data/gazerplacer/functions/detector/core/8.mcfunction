@@ -1,6 +1,5 @@
 #> gazerplacer:detector/core/8
 # @within function
-#   gazerplacer:detector/main
 #   gazerplacer:detector/core/4
 
 # flag
@@ -11,4 +10,3 @@
 # if flag remains, go deep
     execute if score $8 Ashen.GazerPlacer.Detector matches 1 positioned ^ ^ ^-0.03125 run function gazerplacer:detector/core/16
     execute if score $8 Ashen.GazerPlacer.Detector matches 1 positioned ^ ^ ^0.03125 run function gazerplacer:detector/core/16
-    

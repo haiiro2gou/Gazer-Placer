@@ -1,6 +1,5 @@
 #> gazerplacer:detector/core/32
 # @within function
-#   gazerplacer:detector/main
 #   gazerplacer:detector/core/16
 
 # block detection
