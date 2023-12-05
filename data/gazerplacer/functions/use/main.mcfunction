@@ -27,10 +27,10 @@
     execute store result entity 1-0-ce2-0-1 Pos[1] double 1 run scoreboard players get $y Ashen.GazerPlacer.Temporary
     execute store result entity 1-0-ce2-0-1 Pos[2] double 1 run scoreboard players get $z Ashen.GazerPlacer.Temporary
 # execute
-    execute if data entity @s SelectedItem{tag: {Ashen: {GazerPlacer: {Item: 1b}}}} run data modify storage gazerplacer:exec temp set from entity @s Inventory[{Slot: -106b}].id
-    execute if data entity @s Inventory[{Slot: -106b, tag: {Ashen: {GazerPlacer: {Item: 1b}}}}] run data modify storage gazerplacer:exec temp set from entity @s SelectedItem.id
+    execute if data entity @s SelectedItem{tag: {Ashen: {GazerPlacer: {Item: 1b}}}} run data modify storage gazerplacer:exec BlockID set from entity @s Inventory[{Slot: -106b}].id
+    execute if data entity @s Inventory[{Slot: -106b, tag: {Ashen: {GazerPlacer: {Item: 1b}}}}] run data modify storage gazerplacer:exec BlockID set from entity @s SelectedItem.id
     execute as 1-0-ce2-0-1 at @s run function gazerplacer:use/core with storage gazerplacer:exec
-    data remove storage gazerplacer:exec temp
+    data remove storage gazerplacer:exec BlockID
 
 # notification
     execute if data storage gazerplacer:player Config{NotifyResult: 1b} run tellraw @a [{"translate": "Ashen.GazerPlacer.Use.Notify", "with":[{"score": {"name": "$x", "objective": "Ashen.GazerPlacer.Temporary"}},{"score": {"name": "$y", "objective": "Ashen.GazerPlacer.Temporary"}},{"score": {"name": "$z", "objective": "Ashen.GazerPlacer.Temporary"}}], "fallback": "Placed Block"}]
