@@ -11,7 +11,7 @@
 # declares max distance
     scoreboard players set $MaxDistance Ashen.GazerPlacer.Detector 10
 # main loop
-    execute anchored eyes positioned ^ ^ ^0.5 run function gazerplacer:detector/core/1
+    execute anchored eyes positioned ^ ^ ^-0.5 run function gazerplacer:detector/core/1
 
 # reset
     scoreboard players reset $MaxDistance Ashen.GazerPlacer.Detector
