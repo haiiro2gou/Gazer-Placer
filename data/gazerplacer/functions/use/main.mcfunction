@@ -37,6 +37,6 @@
 
 # reset
     execute in gazerplacer:clipboard run tp 1-0-ce2-0-1 0 0 0
-    # scoreboard players reset $x Ashen.GazerPlacer.Temporary
-    # scoreboard players reset $y Ashen.GazerPlacer.Temporary
-    # scoreboard players reset $z Ashen.GazerPlacer.Temporary
+    scoreboard players reset $x Ashen.GazerPlacer.Temporary
+    scoreboard players reset $y Ashen.GazerPlacer.Temporary
+    scoreboard players reset $z Ashen.GazerPlacer.Temporary
