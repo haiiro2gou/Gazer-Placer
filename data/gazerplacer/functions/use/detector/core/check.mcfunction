@@ -49,5 +49,5 @@
     execute if score $Face Ashen.GazerPlacer.Detector matches 1..6 positioned ~ ~ ~ run function gazerplacer:use/detector/core/exec
 
 # score reset
-    execute if score $Face Ashen.GazerPlacer.Detector matches 1..6 store result score $1 Ashen.GazerPlacer.Detector store result score $2 Ashen.GazerPlacer.Detector store result score $4 Ashen.GazerPlacer.Detector store result score $8 Ashen.GazerPlacer.Detector store result score $16 Ashen.GazerPlacer.Detector store result score $32 Ashen.GazerPlacer.Detector run scoreboard players set #loop Ashen.GazerPlacer.Detector 0
+    execute if score $Face Ashen.GazerPlacer.Detector matches 1..6 store result score $1 Ashen.GazerPlacer.Detector store result score $2 Ashen.GazerPlacer.Detector store result score $4 Ashen.GazerPlacer.Detector store result score $8 Ashen.GazerPlacer.Detector store result score $16 Ashen.GazerPlacer.Detector store result score $32 Ashen.GazerPlacer.Detector run scoreboard players set $MaxDistance Ashen.GazerPlacer.Detector 0
     scoreboard players reset $Face Ashen.GazerPlacer.Detector
