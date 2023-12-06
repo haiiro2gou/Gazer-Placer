@@ -2,7 +2,7 @@
 # @within function gazerplacer:load
 
 #> version
-    data modify storage global Ashen.GazerPlacer.Version set value "v0.0.0"
+    data modify storage global Ashen.GazerPlacer.Version set value "v0.0.1"
 
     tellraw @a [{"text": "================================", "color": "gold"}]
     tellraw @a [{"translate": "Ashen.GazerPlacer.Version", "fallback": "\u00A7aGazer Placer %s", "with": [{"nbt": "Ashen.GazerPlacer.Version", "storage": "minecraft:global", "color": "dark_gray"}]}, {"text": " "}, {"translate": "Ashen.GazerPlacer.Developer", "fallback": "by haiiro2gou", "color": "gray"}]
