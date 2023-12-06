@@ -24,6 +24,6 @@
     execute in gazerplacer:clipboard if data storage gazerplacer:exec {Replace: 1b, IsOffhand: 1b} run item replace entity @s weapon.offhand from block 0 0 0 container.0
 
 # リセット
-    data remove storage gazerplacer:exec Items
+    data remove storage gazerplacer:exec Item
     data remove storage gazerplacer:exec Replace
     data remove storage gazerplacer:exec IsOffhand
