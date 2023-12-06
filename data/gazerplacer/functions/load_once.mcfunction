@@ -24,7 +24,7 @@
 
     #> detector
     # @within function
-    #   gazerplacer:detector/**
+    #   gazerplacer:use/detector/**
         #declare tag/block gazerplacer:air
         scoreboard objectives add Ashen.GazerPlacer.Detector dummy
 

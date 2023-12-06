@@ -1,5 +1,5 @@
-#> gazerplacer:detector/main
-# @within function gazerplacer:detector/
+#> gazerplacer:use/detector/main
+# @within function gazerplacer:use/detector/
 
 # clear base
     data remove storage gazerplacer:exec Detector
@@ -11,13 +11,7 @@
 # declares max distance
     scoreboard players set $MaxDistance Ashen.GazerPlacer.Detector 10
 # main loop
-    execute anchored eyes positioned ^ ^ ^-0.5 run function gazerplacer:detector/core/1
+    execute anchored eyes positioned ^ ^ ^-0.5 run function gazerplacer:use/detector/core/1
 
 # reset
     scoreboard players reset $MaxDistance Ashen.GazerPlacer.Detector
-    scoreboard players reset $1 Ashen.GazerPlacer.Detector
-    scoreboard players reset $2 Ashen.GazerPlacer.Detector
-    scoreboard players reset $4 Ashen.GazerPlacer.Detector
-    scoreboard players reset $8 Ashen.GazerPlacer.Detector
-    scoreboard players reset $16 Ashen.GazerPlacer.Detector
-    scoreboard players reset $32 Ashen.GazerPlacer.Detector

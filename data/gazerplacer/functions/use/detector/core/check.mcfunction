@@ -1,5 +1,5 @@
-#> gazerplacer:detector/core/check
-# @within function gazerplacer:detector/core/32
+#> gazerplacer:use/detector/core/check
+# @within function gazerplacer:use/detector/core/32
 
 #> private
 # @private
@@ -57,5 +57,6 @@
     execute if score $Face Ashen.GazerPlacer.Detector matches 1..6 run kill 1-0-ce2-0-0
 
 # score reset
-    execute if score $Face Ashen.GazerPlacer.Detector matches 1..6 store result score #1 Ashen.GazerPlacer.Detector store result score #05 Ashen.GazerPlacer.Detector store result score #025 Ashen.GazerPlacer.Detector store result score #0125 Ashen.GazerPlacer.Detector store result score #00625 Ashen.GazerPlacer.Detector store result score #003125 Ashen.GazerPlacer.Detector run scoreboard players set #loop Ashen.GazerPlacer.Detector 0
+    execute if score $Face Ashen.GazerPlacer.Detector matches 1..6 store result score $1 Ashen.GazerPlacer.Detector store result score $2 Ashen.GazerPlacer.Detector store result score $4 Ashen.GazerPlacer.Detector store result score $8 Ashen.GazerPlacer.Detector store result score $16 Ashen.GazerPlacer.Detector store result score $32 Ashen.GazerPlacer.Detector run scoreboard players set #loop Ashen.GazerPlacer.Detector 0
+    execute if score $Face Ashen.GazerPlacer.Detector matches 1..6 store result score $1 Ashen.GazerPlacer.Detector store result score $2 Ashen.GazerPlacer.Detector store result score $4 Ashen.GazerPlacer.Detector store result score $8 Ashen.GazerPlacer.Detector store result score $16 Ashen.GazerPlacer.Detector store result score $32 Ashen.GazerPlacer.Detector run scoreboard players set #loop Ashen.GazerPlacer.Detector 0
     scoreboard players reset $Face Ashen.GazerPlacer.Detector

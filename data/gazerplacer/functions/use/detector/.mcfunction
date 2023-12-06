@@ -1,4 +1,4 @@
-#> gazerplacer:detector/
+#> gazerplacer:use/detector/
 # @api
 # @user
 
@@ -14,7 +14,7 @@
     execute unless score $Validate Ashen.GazerPlacer.Temporary matches 1 run tellraw @a [{"nbt": "Ashen.Global.Prefix.ERROR", "storage": "global"}, {"text": "Failed to validate detector marker. Please reload."}]
 
 # main process
-    execute if score $Validate Ashen.GazerPlacer.Temporary matches 1 run function gazerplacer:detector/main
+    execute if score $Validate Ashen.GazerPlacer.Temporary matches 1 run function gazerplacer:use/detector/main
 
 # reset
     scoreboard players reset $Validate Ashen.GazerPlacer.Temporary
