@@ -8,9 +8,9 @@
 
 # validate
     scoreboard players set $Validate Ashen.GazerPlacer.Temporary 1
-    execute unless entity 1-0-ce2-0-1 run scoreboard players set $Validate Ashen.GazerPlacer.Temporary 0
-    execute unless entity 1-0-ce2-0-2 run scoreboard players set $Validate Ashen.GazerPlacer.Temporary 0
-    execute unless entity 1-0-ce2-0-3 run scoreboard players set $Validate Ashen.GazerPlacer.Temporary 0
+    execute unless entity 1-0-ce2-0-1 run summon marker 0 0 0 {Tags: ["Ashen.GazerPlacer.Detector.Marker", "Ashen.GazerPlacer.Detector.1"], UUID: [I; 1, 3298, 0, 1]}
+    execute unless entity 1-0-ce2-0-2 run summon marker 0 0 0 {Tags: ["Ashen.GazerPlacer.Detector.Marker", "Ashen.GazerPlacer.Detector.2"], UUID: [I; 1, 3298, 0, 2]}
+    execute unless entity 1-0-ce2-0-3 run summon marker 0 0 0 {Tags: ["Ashen.GazerPlacer.Detector.Marker", "Ashen.GazerPlacer.Detector.3"], UUID: [I; 1, 3298, 0, 3]}
     execute unless score $Validate Ashen.GazerPlacer.Temporary matches 1 run tellraw @a [{"nbt": "Ashen.Global.Prefix.ERROR", "storage": "global"}, {"text": "Failed to validate detector marker. Please reload."}]
 
 # main process
@@ -18,6 +18,4 @@
 
 # reset
     scoreboard players reset $Validate Ashen.GazerPlacer.Temporary
-    execute in gazerplacer:clipboard run tp 1-0-ce2-0-1 0 0 0 0 0
-    execute in gazerplacer:clipboard run tp 1-0-ce2-0-2 0 0 0 0 0
-    execute in gazerplacer:clipboard run tp 1-0-ce2-0-3 0 0 0 0 0
+    kill @e[tag=Ashen.GazerPlacer.Detection.Marker]
