@@ -46,15 +46,7 @@
     execute if entity @s[x_rotation=-180..0,scores={Ashen.GazerPlacer.Detector=2}] if block ~ ~-1 ~ #gazerplacer:air run scoreboard players set $Face Ashen.GazerPlacer.Detector 6
 
 # exec
-    execute if score $Face Ashen.GazerPlacer.Detector matches 1 run data modify storage gazerplacer:exec Detector.Facing set value "east"
-    execute if score $Face Ashen.GazerPlacer.Detector matches 2 run data modify storage gazerplacer:exec Detector.Facing set value "north"
-    execute if score $Face Ashen.GazerPlacer.Detector matches 3 run data modify storage gazerplacer:exec Detector.Facing set value "west"
-    execute if score $Face Ashen.GazerPlacer.Detector matches 4 run data modify storage gazerplacer:exec Detector.Facing set value "south"
-    execute if score $Face Ashen.GazerPlacer.Detector matches 5 run data modify storage gazerplacer:exec Detector.Facing set value "up"
-    execute if score $Face Ashen.GazerPlacer.Detector matches 6 run data modify storage gazerplacer:exec Detector.Facing set value "down"
-    execute if score $Face Ashen.GazerPlacer.Detector matches 1..6 run summon marker ~ ~ ~ {UUID: [I; 1, 3298, 0, 0]}
-    execute if score $Face Ashen.GazerPlacer.Detector matches 1..6 run data modify storage gazerplacer:exec Detector.Position set from entity 1-0-ce2-0-0 Pos
-    execute if score $Face Ashen.GazerPlacer.Detector matches 1..6 run kill 1-0-ce2-0-0
+    execute if score $Face Ashen.GazerPlacer.Detector matches 1..6 run function gazerplacer:use/detector/core/place
 
 # score reset
     execute if score $Face Ashen.GazerPlacer.Detector matches 1..6 store result score $1 Ashen.GazerPlacer.Detector store result score $2 Ashen.GazerPlacer.Detector store result score $4 Ashen.GazerPlacer.Detector store result score $8 Ashen.GazerPlacer.Detector store result score $16 Ashen.GazerPlacer.Detector store result score $32 Ashen.GazerPlacer.Detector run scoreboard players set #loop Ashen.GazerPlacer.Detector 0
