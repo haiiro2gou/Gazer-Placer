@@ -11,6 +11,12 @@ jobs:
     runs-on: ubuntu-latest
     if: "!contains(github.event.head_commit.message, '[skip ci]')"
     steps:
+      - name: Checkout Dependency
+        uses: actions/checkout@v3
+        with:
+          repository: haiiro2gou/Ashen-Lib
+          fetch-depth: 0
+
       - name: Checkout Repository
         uses: actions/checkout@v3
         with:
