@@ -34,5 +34,5 @@ Datapack to place blocks where you see
 ### 各種リンク (Contact)
 
 **Discord: haiiro2gou**  
-**Twitter: [@blanoir3298](https://twitter.com/blanoir3298)**  
+**X (Twitter): [@blanoir3298](https://x.com/blanoir3298)**  
 **Youtube: [はいいろ。](https://www.youtube.com/channel/UC4HoswwsCjgVmZlmhZ0Dpbg)**
