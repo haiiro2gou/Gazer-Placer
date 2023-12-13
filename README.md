@@ -29,7 +29,7 @@ Datapack to place blocks where you see
 
 以下のディレクトリを除き[Apache-2.0 License](LICENSE)が適用されています。
 
-- [data/gazerplacer/functions/use/detector](data/gazerplacer/functions/use/detector)ディレクトリ ([MIT License](data/gazerplacer/functions/use/detector/LICENSE) / Copyright by [Rusk_Eocssar](https://github.com/RuskEocssar))
+- [data/gazerplacer/functions/use/detector](data/gazerplacer/functions/detector/)ディレクトリ ([MIT License](data/gazerplacer/functions/detector/LICENSE) / Copyright by [Rusk_Eocssar](https://github.com/RuskEocssar))
 
 ### 各種リンク (Contact)
 
