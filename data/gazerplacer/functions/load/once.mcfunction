@@ -2,7 +2,7 @@
 # @within function gazerplacer:load/main
 
 #> version
-    data modify storage global Ashen.GazerPlacer.Version set value "v0.0.1"
+    data modify storage global Ashen.GazerPlacer.Version set value "v0.1.0"
 
     tellraw @a [{"text": "================================", "color": "gold"}]
     tellraw @a [{"translate": "Ashen.GazerPlacer.Version", "fallback": "\u00A7aGazer Placer %s", "with": [{"nbt": "Ashen.GazerPlacer.Version", "storage": "minecraft:global", "color": "dark_gray"}]}, {"text": " "}, {"translate": "Ashen.GazerPlacer.Developer", "fallback": "by haiiro2gou", "color": "gray"}]
@@ -16,12 +16,6 @@
     #   gazerplacer:tick/*
     #   gazerplacer:detector/**
         scoreboard objectives add Ashen.GazerPlacer.Detector dummy {"translate": "Ashen.GazerPlacer.ScoreDetector", "fallback": "Gazer Placer: Block Detector"}
-
-    #> handler
-    # @within function
-    #   gazerplacer:tick/player
-    #   gazerplacer:handler/**
-        scoreboard objectives add Ashen.GazerPlacer.FirstJoin custom:play_time {"translate": "Ashen.GazerPlacer.ScoreFirstJoin", "fallback": "Gazer Placer: First Join Detection"}
 
     #> trigger
     # @within function

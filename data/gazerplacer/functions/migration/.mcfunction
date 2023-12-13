@@ -2,3 +2,5 @@
 # @within function gazerplacer:load/main
 
 execute if data storage global Ashen.GazerPlacer{Version: "v0.0.0"} run function gazerplacer:migration/v0.0.1/
+
+execute if data storage global Ashen.GazerPlacer{Version: "v0.0.1"} run function gazerplacer:migration/v0.1.0/
