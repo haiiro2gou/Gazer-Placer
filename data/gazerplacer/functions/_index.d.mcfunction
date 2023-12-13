@@ -4,5 +4,5 @@
 #> tag
 # @within function
 #   gazerplacer:tick/*
-#   gazerplacer:detector/**
+#   gazerplacer:interaction/*
     #declare tag Ashen.GazerPlacer.Interaction
