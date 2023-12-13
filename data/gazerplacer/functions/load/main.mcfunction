@@ -1,5 +1,5 @@
-#> gazerplacer:load/
-# @within tag/function ashen_lib:load
+#> gazerplacer:load/main
+# @within function gazerplacer:load/
 
 # リリースチェック
     data modify storage global Ashen.GazerPlacer.IsProduction set value false
