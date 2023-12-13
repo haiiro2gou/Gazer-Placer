@@ -4,5 +4,5 @@
 # Config
     function indexstorage:pull/
     data modify storage indexstorage: Config.GazerPlacer set value {NotifyResult: 0b, ReplaceMode: 0b}
-    function gazerplacer:give
     function indexstorage:push/
+    function gazerplacer:give

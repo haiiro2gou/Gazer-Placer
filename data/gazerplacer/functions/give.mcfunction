@@ -19,9 +19,9 @@
 # 渡す
     execute in ashen_lib:clipboard run item replace block 0 0 0 container.0 with stone
     execute in ashen_lib:clipboard run data modify block 0 0 0 Items[0] set from storage gazerplacer: Give.Item
-    execute in ashen_lib:clipboard if data storage gazerplacer: {Replace: 0b} run loot give @s mine 0 0 0 debug_stick
-    execute in ashen_lib:clipboard if data storage gazerplacer: {Replace: 1b, IsOffhand: 0b} run item replace entity @s weapon.mainhand from block 0 0 0 container.0
-    execute in ashen_lib:clipboard if data storage gazerplacer: {Replace: 1b, IsOffhand: 1b} run item replace entity @s weapon.offhand from block 0 0 0 container.0
+    execute in ashen_lib:clipboard if data storage gazerplacer: Give{Replace: 0b} run loot give @s mine 0 0 0 debug_stick
+    execute in ashen_lib:clipboard if data storage gazerplacer: Give{Replace: 1b, IsOffhand: 0b} run item replace entity @s weapon.mainhand from block 0 0 0 container.0
+    execute in ashen_lib:clipboard if data storage gazerplacer: Give{Replace: 1b, IsOffhand: 1b} run item replace entity @s weapon.offhand from block 0 0 0 container.0
 
 # リセット
     data remove storage gazerplacer: Give

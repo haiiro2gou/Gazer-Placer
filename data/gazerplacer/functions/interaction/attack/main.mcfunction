@@ -27,7 +27,7 @@
     function indexstorage:push/
 
 # replace rod
-    data modify storage gazerplacer: Interaction.Give.Replace set value true
+    data modify storage gazerplacer: Give.Replace set value true
     execute if data entity @s Inventory[{Slot: -106b, tag: {Ashen: {GazerPlacer: {Item: 1b}}}}] run data modify storage gazerplacer: Interaction.Give.Offhand set value true
     function gazerplacer:give
 
