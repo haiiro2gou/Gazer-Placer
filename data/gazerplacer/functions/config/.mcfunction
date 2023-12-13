@@ -7,8 +7,7 @@
     tellraw @s [{"text": ""}]
 
 # List
-    execute store result storage gazerplacer:player Index int 1 run scoreboard players get @s Ashen.GazerPlacer.UserID
-    function gazerplacer:config/list with storage gazerplacer:player
+    function gazerplacer:config/list
 
 # Suffix
     tellraw @s [{"text": ""}]
@@ -18,6 +17,3 @@
 # Trigger
     scoreboard players reset @s Ashen.GazerPlacer.Trigger
     scoreboard players enable @s Ashen.GazerPlacer.Trigger
-
-# Reset
-    data remove storage gazerplacer:player Index

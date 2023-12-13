@@ -1,19 +1,8 @@
 #> gazerplacer:handler/first_join
-# @within function gazerplacer:tick/player
+# @within tag/function ashen_lib:handler/first_join
 
-#> private
-# @private
-    #declare score_holder $Index
-
-# User ID
-    execute store result score $Index Ashen.GazerPlacer.Temporary run data get storage gazerplacer:player Count 1
-    scoreboard players add $Index Ashen.GazerPlacer.Temporary 1
-    execute store result storage gazerplacer:player Count int 1 run scoreboard players get $Index Ashen.GazerPlacer.Temporary
-    scoreboard players operation @s Ashen.GazerPlacer.UserID = $Index Ashen.GazerPlacer.Temporary
-    function gazerplacer:config/init
-
-# ロッド
+# Config
+    function indexstorage:pull/
+    data modify storage indexstorage: Config.GazerPlacer set value {NotifyResult: 0b, ReplaceMode: 0b}
     function gazerplacer:give
-
-# リセット
-    scoreboard players reset $Index Ashen.GazerPlacer.Temporary
+    function indexstorage:push/

@@ -2,5 +2,7 @@
 # @private
 
 #> tag
-# @within function gazerplacer:**
+# @within function
+#   gazerplacer:tick/*
+#   gazerplacer:detector/**
     #declare tag Ashen.GazerPlacer.Interaction
